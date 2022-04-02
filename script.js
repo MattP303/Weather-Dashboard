@@ -159,7 +159,7 @@ function getSearchHistory() {
 		var rowEl = $('<row>');
 		var btnEl = $('<button>').text(`${searchHistory[i]}`)
 		rowEl.addClass('row histBtnRow');
-		btnEl.addClass('btn btn-outline-secondary btn-block');
+		btnEl.addClass('btn btn-outline-secondary btn-block histBtn');
 		btnEl.attr('type', 'button');
 		searchHistoryClickify.prepend(rowEl);
 		rowEl.append(btnEl);
