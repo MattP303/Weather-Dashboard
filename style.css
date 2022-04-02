@@ -1,0 +1,52 @@
+h1 {
+	background-image: linear-gradient(to right, rgb(82, 89, 193),rgb(152, 152, 233));
+	text-align: center;
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+label {
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 20px;
+}
+.card {
+	margin: 10px;
+}
+.colOne {
+	background-color: white;
+}
+.colTwo {
+	background-color: rgb(255, 255, 255);
+}
+.histBtnRow {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.green{
+  background-color: green;
+}
+.yellow{
+  background-color: yellow;
+}
+
+.red{
+  background-color: red;
+}
+.undefinedUVI{
+  background-color: purple;
+}
+.icons {
+	height: 80px;
+	width: 80px;
+}
+.cardTodayDate {
+	font-size: 20px;
+}
+
+.cardOne {
+	padding: 10px;
+}
+
+.currentForecast {
+	width: 100%;
+}
