@@ -47,6 +47,9 @@ label {
 	padding: 10px;
 }
 
-.currentForecast {
+.dayCard {
 	width: 100%;
+	border: 1px solid rgb(61, 58, 58);
+	padding: 10px;
 }
+
