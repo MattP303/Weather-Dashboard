@@ -1,5 +1,5 @@
 h1 {
-	background-image: linear-gradient(to right, rgb(82, 89, 193),rgb(152, 152, 233));
+	background-image: linear-gradient(to right, rgb(76, 80, 200),rgb(168, 116, 232));
 	text-align: center;
     color: aliceblue;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -22,15 +22,24 @@ label {
 	margin-top: 5px;
 	margin-bottom: 5px;
 }
-.green{
+.favorable{
   background-color: green;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
 }
-.yellow{
+.moderate{
   background-color: yellow;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
 }
 
-.red{
+.severe{
   background-color: red;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
 }
 .undefinedUVI{
   background-color: purple;
@@ -45,11 +54,17 @@ label {
 
 .cardOne {
 	padding: 10px;
+	background-color: rgb(76, 80, 200);
 }
 
 .dayCard {
 	width: 100%;
 	border: 1px solid rgb(61, 58, 58);
 	padding: 10px;
+}
+
+.search {
+	background-color: rgb(76, 80, 200);
+	color: white;
 }
 

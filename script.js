@@ -1,7 +1,7 @@
 var APIkey ='85577edceeeea73f289df86a132be521';
 var city = 'Boulder'
 var currentDate = moment().format('dddd, MMMM Do YYYY');
-var currentDatePlusTime = moment().format('YYYY-MM-DD HH:MM:SS')
+
 
 // Save users city searches in an array
 var searchHistory = [];
@@ -39,20 +39,20 @@ function getForecastWeek() {
 				humidity: value.main.humidity
 			}
 
-			if (value.dt_txt.split(' ')[1] === "12:00:00") {
+			if (value.dt_txt.split(' ')[1] === "15:00:00") {
 				myWeather.push(testObj);
 			}
 		}) 
 		for (let i = 0; i < myWeather.length; i++) {
 
 			var divElCard = $('<div>');
-			divElCard.attr('class', 'card text-white bg-primary mb-3 cardOne');
+			divElCard.attr('class', 'card text-white mb-3 cardOne');
 			divElCard.attr('style', 'max-width: 200px;');
 			forecastWeekEl.append(divElCard);
 
 			var divElHeader = $('<div>');
 			divElHeader.attr('class', 'cardHeader')
-			var m = moment(`${myWeather[i].currentDate}`).format('MM-DD-YYYY');
+			var m = moment(`${myWeather[i].currentDate}`).format('MM/DD/YYYY');
 			divElHeader.text(m);
 			divElCard.append(divElHeader)
 
@@ -122,11 +122,11 @@ function getForecastToday() {
 			pElUvi.append(uviSpan);
 			forecastDetails.append(pElUvi);
 			if (uvi >= 0 && uvi <= 2) {
-				uviSpan.attr('class', 'green');
+				uviSpan.attr('class', 'favorable');
 			} else if (uvi > 2 && uvi <= 5) {
-				uviSpan.attr("class", "yellow")
+				uviSpan.attr("class", "moderate")
 			} else if (uvi > 5 && uvi <= 7) {
-				uviSpan.attr("class", "red")
+				uviSpan.attr("class", "severe")
 			} else {
 				uviSpan.attr("class", "undefinedUVI")
 			}
