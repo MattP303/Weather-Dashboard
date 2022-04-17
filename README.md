@@ -6,3 +6,5 @@ A simple application for entering the name of a city and displaying todays curre
 
 What does it look like?
 ![Screenshot](./screenshot.png)
+![Screenshot](./weather5day.png)
+![Screenshot](./weatherSearch.png)
